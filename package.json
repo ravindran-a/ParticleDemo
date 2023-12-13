@@ -10,8 +10,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-native": "0.71.14",
     "@particle-network/rn-auth": "^1.2.6",
     "@particle-network/rn-connect": "^1.2.6",
     "@particle-network/rn-wallet": "^1.2.6",
@@ -23,11 +21,14 @@
     "@react-native-community/netinfo": "^9.4.1",
     "@react-native-firebase/analytics": "^18.5.0",
     "@react-native-firebase/app": "^18.5.0",
-    "@react-native-firebase/app-check": "^18.5.0",
     "@react-native-firebase/crashlytics": "^18.5.0",
     "@react-native-firebase/database": "^18.5.0",
     "@react-native-firebase/in-app-messaging": "^18.5.0",
-    "@react-native-firebase/messaging": "^18.5.0"
+    "@react-native-firebase/messaging": "^18.5.0",
+    "react": "18.2.0",
+    "react-native": "0.71.14",
+    "react-native-modal-selector": "^2.1.2",
+    "react-native-toast-message": "^2.1.9"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

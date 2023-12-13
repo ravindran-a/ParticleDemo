@@ -137,6 +137,7 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    
 
     // applicationVariants are e.g. debug, release
     applicationVariants.all { variant ->
@@ -160,6 +161,9 @@ dependencies {
         module("org.bouncycastle:bcprov-jdk15to18") {
             replacedBy("org.bouncycastle:bcprov-jdk15on")
         }
+        module("com.google.protobuf:protobuf-java") {
+            replacedBy("com.google.protobuf:protobuf-javalite")
+        }
     }
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
@@ -182,3 +186,5 @@ dependencies {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+apply plugin: 'com.google.gms.google-services'
+
